@@ -1,3 +1,51 @@
+//Drag and drop
+
+//Listeners de Drag&Drop
+$(document).ready(function() { 
+   var area = document.getElementById('DRAGDROP');
+   area.addEventListener('drop', handleFileSelect, false);
+   area.addEventListener('dragover', handleDragOver, false);
+   area.addEventListener('dragleave', handleDragLeave, false);
+});
+
+//DROP: Se ejecuta cuando se realiza un drop
+function handleFileSelect(evt) {
+  evt.stopPropagation();
+  evt.preventDefault();
+
+  var file = evt.dataTransfer.files; 
+
+  if (file[0]) {
+    var r = new FileReader();
+
+    r.onload = function(e) { 
+      var contents = e.target.result;
+      INPUT.innerHTML = contents;
+    }
+
+    r.readAsText(file[0]);
+  }
+  else { 
+    alert("Error al cargar el fichero");
+  }
+
+  evt.target.style.background = "#FFF";
+}
+
+//DRAGOVER: Se ejecuta cuando el fichero se encuentra encima del area de drop
+function handleDragOver(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+    evt.target.style.background = "#DDD";
+}
+
+//DRAGLEAVE: Se ejecuta cuando se sale del area de drop
+function handleDragLeave(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+    evt.target.style.background = "#FFF";
+}
+
 /*jslint evil: true */
 
 /*members create, error, message, name, prototype, stringify, toSource,
@@ -9,11 +57,12 @@
 // Transform a token object into an exception object and throw it.
 //  http://stackoverflow.com/questions/17857670/javascript-prototype-throw-the-error-as-object-object-object-has-no-method
 // Thanks Eliasib for pointing the error
+
 Object.constructor.prototype.error = function (message, t) {
-    t = t || this;
-    t.name = "SyntaxError";
-    t.message = message;
-    throw t;
+  t = t || this;
+  t.name = "SyntaxError";
+  t.message = message;
+  throw t;
 };
 
 function main() {
