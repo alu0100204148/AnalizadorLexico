@@ -8,27 +8,14 @@ html *
 }
 #DRAGDROP
 {
-    border: #999 1px solid; 
-    color: #FFF;
+    border: #555 3px dotted; 
     height: 1in;
     overflow: auto;
     width: 80%;
     background-color: #66FFCC;
-    margin-bottom: 20px
-}
-
-#PLACEHOLDER {
-    margin: 10px;
-    border: #555 3px dotted; 
-    font-family: monospace;
-    height: 70%;
-}
-
-#PLACEHOLDER p
-{
+    margin-bottom: 20px;
     text-align: center;
-    margin-top: 25px;
-    color: #555;
+    color: #333
 }
 
 body { background-color: #99FFFF; }
