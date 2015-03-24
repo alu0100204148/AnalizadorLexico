@@ -1,17 +1,32 @@
-##TDOP, Top Down Operator Precedence Mini JavaScript Parser
+#Práctica 3
 
-## Author
+##  Analizador  léxico
 
-Forked from Douglas Crockford TDOP project.
-douglas@crockford.com
+> Autor: Alexis López, Marcos Luis, Sergio Gonzáles Rodriguez
 
-## Introduction
+## Acceder a la pagina de la Practica 3
 
-* A full introduction is in the file [tdop.html](http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/tdop.html) by Douglas Crockford.
-It contains a description of Vaughn Pratt's Top Down Operator Precedence,
-and describes a parser for Simplified JavaScript in Simplified JavaScript.
+[Github Pages](http://alu0100204148.github.io/AnalizadorLexico/), 
 
-* [Deployment at GitHub pages](http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/). 
-  The app parses the input file  and displays its AST. 
+[Heroku](https://analizadorlexico.herokuapp.com/), 
 
-* The exercise is to understand and improve [tokens.js](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/master/tokens.js). The `tokens` function  produces an array with the tokens for a given input string.
+[Test Heroku](https://analizadorlexico.herokuapp.com/test), 
+
+
+Para ver los tests hay un enlace en la misma.
+
+Para probar gulp y karma simplemente deberá ejecutar npm install, 
+con lo que se descargara todo lo necesario para su ejecución.
+
+Para probar gulp:
+
+  gulp test
+
+Para probar karma:
+
+  node_modules/karma/bin/karma start
+  
+  
+## Travis
+[![Build Status](https://api.travis-ci.org/alu0100204148/AnalizadorLexico.svg)](https://travis-ci.org/alu0100204148/AnalizadorLexico)
+
