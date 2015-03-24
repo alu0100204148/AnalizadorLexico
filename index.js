@@ -8,7 +8,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/'));
 
 app.get('/', function (request, response) {
-    response.render('index', { title: 'Comma Separated Value Analyzer' });
+    response.render('index', { title: 'Analizador lexico' });
 });
 
 app.listen(app.get('port'), function () {
