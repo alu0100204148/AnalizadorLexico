@@ -29,21 +29,21 @@ function handleFileSelect(evt) {
     alert("Error al cargar el fichero");
   }
 
-  evt.target.style.background = "#66FFCC";
+  evt.target.style.background = "#FFF";
 }
 
 //DRAGOVER: Se ejecuta cuando el fichero se encuentra encima del area de drop
 function handleDragOver(evt) {
     evt.stopPropagation();
     evt.preventDefault();
-    evt.target.style.background = "#ADFFE3";
+    evt.target.style.background = "#DDD";
 }
 
 //DRAGLEAVE: Se ejecuta cuando se sale del area de drop
 function handleDragLeave(evt) {
     evt.stopPropagation();
     evt.preventDefault();
-    evt.target.style.background = "#66FFCC";
+    evt.target.style.background = "#FFF";
 }
 
 /*jslint evil: true */
