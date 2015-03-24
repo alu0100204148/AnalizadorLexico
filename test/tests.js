@@ -1,6 +1,6 @@
 var assert = chai.assert;
 
-suite('Comma Separated Values', function() {
+suite('Analizador lexico', function() {
 
   setup(function(){
     if (typeof __html__ !== 'undefined') {
@@ -28,11 +28,7 @@ suite('Comma Separated Values', function() {
   });
   
   
-  test('Prueba de error', function() {
-    INPUT.value = 'var = var a';
-    main();
-    assert.deepEqual(OUTPUT.innerHTML, '{\n    "name": "TypeError",\n    "message": "undefined is not a function"\n}');
-  });
+ 
   
 
 });
