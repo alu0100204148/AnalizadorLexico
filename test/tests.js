@@ -50,5 +50,31 @@ suite('Analizador lexico', function() {
     main();'{\n    "value": "=",\n    "arity": "binary",\n    "first": {\n        "value": "a",\n        "arity": "name"\n    },\n    "second": {\n        "value": "require",\n        "arity": "function",\n        "first": {\n            "value": "hola",\n            "arity": "literal"\n        }\n    }\n}'
     assert.deepEqual(OUTPUT.innerHTML, '{\n    "value": "=",\n    "arity": "binary",\n    "first": {\n        "value": "a",\n        "arity": "name"\n    },\n    "second": {\n        "value": "require",\n        "arity": "function",\n        "first": {\n            "value": "hola",\n            "arity": "literal"\n        }\n    }\n}');
   });
+  
+  
+  test('Prueba drop', function() {
+  	var test = [];
+  	//var aFileParts = ['var a = 2;'];
+		//var oMyBlob = new Blob(aFileParts, {type : 'text/plain'});
+  	var test = {
+  	  files: test
+  	}
+  	var style_ = {
+  		background: ""
+  	}
+  	var target_ = {
+  		style: style_
+  	}
+  	var fakeEvent = {
+  		stopPropagation: function(){},
+  		preventDefault: function(){},
+  		dataTransfer: test,
+  		target: target_
+  	}
+    handleFileSelect(fakeEvent);
+    //INPUT.value = 'var a = $';
+    //main();
+    //assert.deepEqual(OUTPUT.innerHTML, '"Syntax error near \'$\'"');
+  });
 
 });
