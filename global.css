@@ -6,6 +6,37 @@ html *
         padding-right: 10px; vertical-align: top;}
     table {width: 90%; border: 0px; cellpadding: 0px;}
 }
+
+body { background: #000 url("images/textura.png"); }
+
+Logo {}
+h1 { color: #FFF; font-family: Tahoma, Geneva, sans-serif; margin: 30px 0 0 40px; padding: 0px; }
+h2 { color: #FFF; font-size: 20px; margin: 0px; padding: 0px; }
+
+.Boton {
+    background-color: #2dc234;
+    background-image: -webkit-linear-gradient(rgba(41, 150, 47, .8), rgba(45, 194, 52, .2));
+    background-image: -moz-linear-gradient(rgba(41, 150, 47, .8), rgba(45, 194, 52, .2));
+    background-image: -o-linear-gradient(rgba(41, 150, 47, .8), rgba(45, 194, 52, .2));
+    background-image: linear-gradient(rgba(41, 150, 47, .8), rgba(45, 194, 52, .2));
+    -ms-border-radius:8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 8px 0 #197b1d, 0 10px 20px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 8px 0 #197b1d, 0 10px 20px rgba(0, 0, 0, .4);
+    box-shadow: 0 8px 0 #197b1d, 0 10px 20px rgba(0, 0, 0, .4);
+    color: #fff;
+    display: inline-block;
+    font-family: ‘Pacifico’, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 1;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px rgba(25, 123, 29, .7);
+    margin: 10px 0 20px 0;
+}
+
 #DRAGDROP
 {
     border: #555 3px dotted; 
@@ -13,43 +44,43 @@ html *
     overflow: auto;
     width: 80%;
     background-color: #FFF;
-    margin-bottom: 20px;
+    margin: 20px 0;
     text-align: center;
-    color: #333
+    color: #555;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 15px;
+    padding: 10px;
 }
 
-body { background-color: #FFF; }
 #INPUT 
 {
-    border: #333 1px solid; 
-    color: black;
-    font-family: monospace;
+    border: #333 3px solid; 
+    color: #555;
+    font-family: Tahoma, Geneva, sans-serif;
     height: 1in;
     overflow: auto;
-    /* padding: 0.5em; */
     width: 80%;
-    background-color: #EEE; 
+    background-color: #EEE;
+    padding: 10px;
+    font-size: 15px;
 }
-body { background-color: #FFF; }
+
 #OUTPUT 
 {
     background-color: #DDD; 
     width: 80%;
 }
 
-
-a {
-  font-size: x-large;
-  text-decoration:none;
+#Enlaces { color: #2dc234; }
+a { font-variant:small-caps; font-size: 15px
 }
 
-a:link { color:#FFF; }
-a:visited { color:black; }
+a:link { color:#2dc234; text-decoration: none; }
+a:visited { color:#2dc234; }
 a:hover{ 
-  background-color:black; 
   color: #FFF;
 }
-a:active {color:#0000FF;}  /* selected link */
+a:active {color:#2dc234; }  /* selected link */
 
 
 
@@ -72,4 +103,4 @@ nav li {
 }
 
 /* Supress borders after the button is pressed */
-#PARSE:focus {outline:0; }
+#PARSE:focus {outline:0; margin-bottom: 20px}
