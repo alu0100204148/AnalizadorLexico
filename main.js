@@ -3,6 +3,9 @@
 //Listeners de Drag&Drop
 $(document).ready(function() { 
    var area = document.getElementById('DRAGDROP');
+
+   if (area == null) {return false;}
+
    area.addEventListener('drop', handleFileSelect, false);
    area.addEventListener('dragover', handleDragOver, false);
    area.addEventListener('dragleave', handleDragLeave, false);
