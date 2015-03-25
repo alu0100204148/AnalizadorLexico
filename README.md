@@ -2,7 +2,7 @@
 
 ##  Analizador  léxico
 
-> Autor: Alexis López, Marcos Luis, Sergio Gonzáles Rodriguez
+> Autor: Alexis López, Marcos Luis, Sergio González Rodríguez
 
 ## Acceder a la pagina de la Practica 3
 
