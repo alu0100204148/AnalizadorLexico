@@ -413,6 +413,14 @@ var make_parse = function () {
         this.arity = "unary";
         return this;
     });
+    
+    prefix("require", function () {
+        advance("(");
+        this.first = expression(0);
+        advance(")");
+        this.arity = "function";
+        return this;
+    });
 
     prefix("{", function () {
         var a = [], n, v;
@@ -516,6 +524,15 @@ var make_parse = function () {
         this.first = expression(0);
         advance(")");
         this.second = block();
+        this.arity = "statement";
+        return this;
+    });
+    
+    stmt("require", function () {
+        advance("(");
+        this.first = expression(0);
+        advance(")");
+        advance(";");
         this.arity = "statement";
         return this;
     });
