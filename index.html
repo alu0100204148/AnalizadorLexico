@@ -8,6 +8,19 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
    <script src="main.js"></script>
+   <script type="text/javascript">
+       function dump_ajax(fileName) {
+         $.ajax({
+         	url : fileName,
+                 dataType: "text",
+                 success : function (data) {
+         		$("#INPUT").val(data);
+         		// Si el navegador soporta localStore almacenamos en el localStorage los datos introducidos
+         		if (window.localStorage) {localStorage.original = data;}
+                 }
+             });
+       }
+   </script>
 </head>
 
 <body>
@@ -31,7 +44,7 @@
   </textarea>
   <br>
   <input id="PARSE" value=parse type=button class="mylink">
-  <input type="file" id="fileinput" />
+  <button id ="input2" type="button" onclick="dump_ajax('input2.txt');">input2</button>
   <pre id=OUTPUT></pre>
 </body>
 </html>
