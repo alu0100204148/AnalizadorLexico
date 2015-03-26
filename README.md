@@ -17,7 +17,7 @@
 La práctica 3 consiste en un analizador léxico de codigo javascript. el códico puede analizarse agreganolo a mano, o con una acción de drag&drop con un fichero de texto.
 
 
-#Ejecutar
+###Ejecutar
 
 Para ver los tests hay un enlace en la misma.
 
