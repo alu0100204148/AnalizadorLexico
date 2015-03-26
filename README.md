@@ -13,6 +13,12 @@
 [Test Heroku](https://analizadorlexico.herokuapp.com/test), 
 
 
+
+La práctica 3 consiste en un analizador léxico de codigo javascript. el códico puede analizarse agreganolo a mano, o con una acción de drag&drop con un fichero de texto.
+
+
+#Ejecutar
+
 Para ver los tests hay un enlace en la misma.
 
 Para probar gulp y karma simplemente deberá ejecutar npm install, 
